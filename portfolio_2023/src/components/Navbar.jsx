@@ -1,41 +1,54 @@
 import React from 'react'
 
 function Navbar() {
-    const [isMenuClicked, setIsMenuClicked] = React.useState(false)
-    const menuText = 'text-base'
-    const textMobile = 'text-5xl'
+  const [isMenuClicked, setIsMenuClicked] = React.useState(false);
+  const menuText = 'text-xs transition-colors hover:bg-black active:bg-black px-4 py-2 rounded-md';
+  const textMobile = 'text-3xl transition-colors hover:bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900 active:bg-black p-2 rounded-md';
+  
+  function setSidebarMenu() {
+    setIsMenuClicked(prev => !prev)
+  }
 
   return (
-    <nav className={`navbar transition-all fixed origin-top-left bg-white ${isMenuClicked ? `scale-y-95`: `h-16`} md:h-20 bg-opacity-10 flex justify-end p-0`}>
-        <div className='max-w-screen-lg flex sm:basis-full px-6 sm:px-16'>
-            <div className='w-full justify-between hidden sm:flex'>
-                <a className={menuText} href="#">Home</a>
-                <a className={menuText} href="#about">Who Am I</a>
-                <a className={menuText} href="#experience">Work Experience</a>
-                <a className={menuText} href="#projects">Projects</a>
-                <a className={menuText} href="#contact">Contact Me</a>
-            </div>
-            <div className='flex flex-col items-end justify-start sm:hidden'>
-                <button onClick={() => setIsMenuClicked(prev => !prev)} className={`btn bg-opacity-0 border-0 pr-1 pt-1 hover:bg-inherit focus:bg-inherit active:bg-inherit focus-visible:outline-0`}>
-                    {isMenuClicked ? 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#ffffff" className="w-10 h-10">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                        : 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#ffffff" className="w-10 h-10">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                    }
-                </button>
-                <div className={`flex flex-col ${isMenuClicked ? `` : `hidden`}`}>
-                    <a className={menuText + " " + textMobile} href="#">Home</a>
-                    <a className={menuText + " " + textMobile} href="#about">Who Am I</a>
-                    <a className={menuText + " " + textMobile} href="#experience">Work Experience</a>
-                    <a className={menuText + " " + textMobile} href="#projects">Projects</a>
-                    <a className={menuText + " " + textMobile} href="#contact">Contact Me</a>
-                </div>
-            </div>
+    <nav className='w-full h-20 sticky top-0 m-0 p-0 bg-black bg-zinc-800 flex sm:justify-center items-center'>
+        <div className='container hidden sm:block'>
+            <ul className='px-20 lg:px-52 w-full flex justify-between'>
+                <li><a className={menuText} href="#">Home</a></li>
+                <li><a className={menuText} href="#about">Who Am I</a></li>
+                <li><a className={menuText} href="#experience">Work Experience</a></li>
+                <li><a className={menuText} href="#projects">Projects</a></li>
+                <li><a className={menuText} href="#contact">Contact Me</a></li>
+            </ul>
         </div>
+        <div className='container flex justify-end sm:hidden mr-6'>
+          <button className='btn btn-ghost px-2' onClick={setSidebarMenu}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+          {isMenuClicked ? 
+          <div>
+            <div className='fixed top-0 w-screen h-screen backdrop-blur'></div>
+            <div className='fixed h-content top-0 right-0 w-5/6 h-screen bg-black flex flex-col pt-4'>
+            <button onClick={setSidebarMenu} className='btn btn-ghost mt-2 mr-8 self-end'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <ul className='pt-10 pl-6'>
+              <li className='mb-14'><a className={textMobile} onClick={setSidebarMenu} href="#">Home</a></li>
+              <li className='mb-14'><a className={textMobile} onClick={setSidebarMenu} href="#about">Who Am I</a></li>
+              <li className='mb-14'><a className={textMobile} onClick={setSidebarMenu} href="#experience">Work Experience</a></li>
+              <li className='mb-14'><a className={textMobile} onClick={setSidebarMenu} href="#projects">Projects</a></li>
+              <li className='mb-14'><a className={textMobile} onClick={setSidebarMenu} href="#contact">Contact Me</a></li>
+            </ul>
+          </div>
+          </div>
+          : ""
+          }
+        
+        
     </nav>
   )
 }
