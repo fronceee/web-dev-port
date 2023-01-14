@@ -28,7 +28,7 @@ function Navbar() {
           </button>
         </div>
           {isMenuClicked ? 
-          <div>
+          <div className='fixed w-full h-full'>
             <div className='fixed top-0 w-screen h-screen backdrop-blur'></div>
             <div className='fixed h-content top-0 right-0 w-5/6 h-screen bg-black flex flex-col pt-4'>
             <button onClick={setSidebarMenu} className='btn btn-ghost mt-2 mr-8 self-end'>
