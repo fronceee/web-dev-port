@@ -1,8 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Card from '../components/Card';
+import { v4 as id } from 'uuid';
+import { projectsData } from '../data/projectsData';
 
 function Projects() {
   return (
-    <div id='projects' className='min-h-screen'>Projects</div>
+    <div id='projects' className='min-h-screen mx-6 max-w-sm scroll-mt-20'>
+      <div>
+        <h1 className={`text-5xl pb-1 mb-8 font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900`}>Projects</h1>
+      </div>
+      <div>
+        {projectsData.map(item => <Card key={id()} item={item} />)}
+      </div>
+    </div>
   )
 }
 

@@ -5,9 +5,9 @@ import { Navbar } from './components'
 function App() {
 
   return (
-    <React.Fragment>
+    <div>
       <Navbar/>
-        <main className='container mx-auto -mt-16 p-0 subpixel-antialiased'>
+        <main className='container mx-auto p-0 subpixel-antialiased'>
           <Header />
           <About />
           <Experience />
@@ -15,7 +15,7 @@ function App() {
           <Contact />
           <Footer />
         </main>
-    </React.Fragment>
+    </div>
       
   )
 }

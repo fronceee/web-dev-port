@@ -8,7 +8,7 @@ function Header() {
       variants={variants}
       initial="hidden"
       animate="show"
-      className='h-screen box-border flex justify-center items-center mx-6 flex-col'>
+      className='h-screen box-border flex justify-center items-center mx-6 -mt-16 flex-col'>
         <motion.div variants={item} className='w-5/6'>
           <div  className='w-full mb-10'>
             <img className='w-full' src='../src/assets/hero_device.svg' />

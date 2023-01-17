@@ -13,7 +13,7 @@ function Navbar() {
       if (prevScrollPos> currentScrollPos) {
         setNavbarTop("0");
       } else {
-        setNavbarTop("-50px");
+        setNavbarTop("-20");
       }
       setPrevScrollPos(currentScrollPos);
     }

@@ -2,44 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { variants , item as motionItem } from "../staggerAntimation";
 import { v4 as id } from 'uuid';
-const jobPlaces = [
-  { 
-    place: 'Skooldio',
-    title: 'Course Development Associate  (Tech / Coding)',
-    time: 'July 2022 - Present',
-    desc: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium']
-    },
-  { 
-    place: 'Samsenwittayalai School',
-    title: 'Student Teacher',
-    time: 'Oct 2022 - March 2023',
-    desc: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium']
-    },
-    { 
-      place: 'Chulalongkorn University Demonstration\nSecondary School',
-      title: 'Student Teacher',
-      time: 'May 2022 - Oct 2022',
-      desc: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium']
-      },
-    { 
-      place: 'Algorithmics Thailand',
-      title: 'Part-Time Python Teacher',
-      time: 'Dec 2020 - Present',
-      desc: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus vestibulum risus vitae urna interdum, et vestibulum nisi pretium']
-      }
-]
+import { jobPlaces } from '../data/jobPlaces'
 
 variants.show.transition = {
   ...variants.show.transition, 
@@ -82,11 +45,11 @@ function Experience() {
       )
   }
   return (
-    <div id='experience' className='min-h-screen mx-6 max-w-sm scroll-mt-8'>
+    <div id='experience' className='min-h-screen mx-6 scroll-mt-20 max-w-sm'>
       <h1 className='text-5xl mb-6 font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>
         Work Experience
       </h1>
-      <div className='w-full h-16 flex items-center overflow-y-scroll snap-x mb-4'>
+      <div className='w-full h-16 flex items-center scrollbar-thin scrollbar-thumb-white scrollbar-thumb-rounded-full overflow-y-scroll snap-x pb-4 mb-4'>
         <ul className='tab flex flex-col'>
           {jobPlaces.map((item,index) => (
           // set back to inline-block due to the tab's 'inline-flex' display
