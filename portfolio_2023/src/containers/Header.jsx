@@ -17,9 +17,9 @@ function Header() {
             <h1>Hi!</h1>
             <h1>My Name is Tharathip</h1>
           </div>
-        </motion.div>
-        <motion.div variants={item} className='self-start ml-8 text-2xl'>
+          <motion.div variants={item} className='self-start text-2xl'>
           <h2>I'm a <span className='block font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>Front-End Developer</span></h2>
+        </motion.div>
         </motion.div>
         
     </motion.div>
