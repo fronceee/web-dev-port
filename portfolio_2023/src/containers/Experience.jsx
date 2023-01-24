@@ -45,21 +45,25 @@ function Experience() {
       )
   }
   return (
-    <div id='experience' className='min-h-screen mx-6 scroll-mt-20 max-w-sm'>
-      <h1 className='text-5xl mb-6 font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>
+    <div id='experience' className='mx-6 scroll-mt-20 mb-20 max-h-fit flex flex-col justify-center items-center'>
+      <h1 className='self-start text-5xl mb-6 font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>
         Work Experience
       </h1>
-      <div className='w-full h-16 flex items-center scrollbar-thin scrollbar-thumb-white scrollbar-thumb-rounded-full overflow-y-scroll snap-x pb-4 mb-4'>
-        <ul className='tab flex flex-col'>
-          {jobPlaces.map((item,index) => (
-          // set back to inline-block due to the tab's 'inline-flex' display
-            <li key={id()} onClick={() => setCurrentIndex(index)} 
-            className={`transition-all tab tab-bordered ${isIndexMatch(index, currentIndex) && `tab-active text-white`} inline-block snap-start ${checkCUD(item.place) ? `text-xs leading-3 whitespace-pre-wrap`: `text-base`}`} >
-              <a key={id()}>{item.place}</a></li>
-          ))}
-        </ul>
+      <div className='w-full flex flex-col md:flex-row md:max-w-screen-md md:h-96 py-14'>
+        <div className='w-full h-16 md:h-fit md:w-fit flex scrollbar-thin scrollbar-thumb-white scrollbar-thumb-rounded-full overflow-y-scroll md:overflow-hidden snap-x pb-4 mb-4'>
+          <ul className='tab flex flex-col md:flex-row md:h-full md:justify-end md:w-[32rem] md:gap-y-6 md:p-0'>
+            {jobPlaces.map((item,index) => (
+            // set back to inline-block due to the tab's 'inline-flex' display
+              <li key={id()} onClick={() => setCurrentIndex(index)} 
+              className={`transition-all tab tab-bordered ${isIndexMatch(index, currentIndex) && `tab-active text-white`} inline-block snap-start ${checkCUD(item.place) ? `text-xs leading-3 whitespace-pre-wrap`: `text-base`}`} >
+                <a key={id()}>{item.place}</a></li>
+            ))}
+          </ul>
+        </div>
+        <div className='grow'>
+          {renderSelectedJob(currentIndex)}
+        </div>
       </div>
-      {renderSelectedJob(currentIndex)}
     </div>
   )
 }

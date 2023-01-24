@@ -8,18 +8,21 @@ function Header() {
       variants={variants}
       initial="hidden"
       animate="show"
-      className='h-screen box-border flex justify-center items-center mx-6 -mt-16 flex-col'>
-        <motion.div variants={item} className='w-5/6'>
-          <div  className='w-full mb-10'>
-            <img className='w-full' src='../src/assets/hero_device.svg' />
+      className='h-screen flex justify-center md:items-between items-center mx-6 -mt-8'>
+        <motion.div variants={item} className='flex flex-col w-full md:items-center justify-center gap-40 sm:flex-row'>
+          <div className='mb-10 md:mb-0 sm:order-3 md:w-[42%]'>
+            <img className='w-full h-full' src='../src/assets/hero_device.svg' />
           </div>
-          <div className='self-start text-4xl font-bold mb-6'>
-            <h1>Hi!</h1>
-            <h1>My Name is Tharathip</h1>
+          <div className='order-1 w-full max-w-fit justify-self-start'>
+            <div className='text-4xl md:text-6xl font-bold mb-6'>
+              <h1>Hi!</h1>
+              <h1>My Name is</h1>
+              <h1>Tharathip</h1>
+            </div>
+            <motion.div variants={item} className='text-2xl md:text-4xl'>
+              <h2>I'm a <span className='block font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>Front-End Developer</span></h2>
+            </motion.div>
           </div>
-          <motion.div variants={item} className='self-start text-2xl'>
-          <h2>I'm a <span className='block font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>Front-End Developer</span></h2>
-        </motion.div>
         </motion.div>
         
     </motion.div>
