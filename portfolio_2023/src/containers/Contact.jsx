@@ -17,8 +17,8 @@ function Contact() {
             </svg>
           </a>
           
-          <a className="flex items-center justify-center w-full h-full mx-4"  href='https://codesandbox.io/u/fronce' target='_blank'>
-            <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a className="flex items-center justify-center w-full h-full mr-4 ml-2"  href='https://codesandbox.io/u/fronce' target='_blank'>
+            <svg viewBox="0 0 600 600" fill="#" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd"  clipRule="evenodd" d="M150 150L449.832 150V450H150V150ZM419.168 180.682V419.318H180.665V180.682H419.168Z" fill="#FEFEFE"/>
             </svg>
           </a>

@@ -49,9 +49,9 @@ function Experience() {
       <h1 className='self-start text-5xl mb-6 font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>
         Work Experience
       </h1>
-      <div className='w-full flex flex-col md:flex-row md:max-w-screen-md md:h-96 py-14'>
+      <div className='w-full flex flex-col md:flex-row md:max-w-screen-md md:h-96 md:mt-20'>
         <div className='w-full h-16 md:h-fit md:w-fit flex scrollbar-thin scrollbar-thumb-white scrollbar-thumb-rounded-full overflow-y-scroll md:overflow-hidden snap-x pb-4 mb-4'>
-          <ul className='tab flex flex-col md:flex-row md:h-full md:justify-end md:w-[32rem] md:gap-y-6 md:p-0'>
+          <ul className='tabs flex flex-col md:flex-row md:h-full md:justify-end md:w-[32rem] md:gap-y-6 md:p-0'>
             {jobPlaces.map((item,index) => (
             // set back to inline-block due to the tab's 'inline-flex' display
               <li key={id()} onClick={() => setCurrentIndex(index)} 

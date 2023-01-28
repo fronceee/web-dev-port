@@ -8,12 +8,12 @@ function Header() {
       variants={variants}
       initial="hidden"
       animate="show"
-      className='h-screen flex justify-center md:items-between items-center mx-6 -mt-8'>
-        <motion.div variants={item} className='flex flex-col w-full md:items-center justify-center gap-40 sm:flex-row'>
+      className='h-screen flex justify-center items-between items-center mx-6 -mt-8'>
+        <motion.div variants={item} className='flex flex-col w-full md:items-center justify-center md:gap-40 sm:flex-row'>
           <div className='mb-10 md:mb-0 sm:order-3 md:w-[42%]'>
             <img className='w-full h-full' src='../src/assets/hero_device.svg' />
           </div>
-          <div className='order-1 w-full max-w-fit justify-self-start'>
+          <div className='order-1 max-w-fit justify-self-start'>
             <div className='text-4xl md:text-6xl font-bold mb-6'>
               <h1>Hi!</h1>
               <h1>My Name is</h1>

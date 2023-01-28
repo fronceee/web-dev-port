@@ -13,6 +13,7 @@ function Card(props) {
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
                     <p>{desc}</p>
+                    <p className='font-extralight text-sm mb-2'>{skills.join(", ")}</p>
                     <div className='card-action'>
                         <a href={linktoProj} target="_blank"><button className="btn btn-primary">Try It!</button></a>
                     </div>

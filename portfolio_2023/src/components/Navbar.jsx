@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar() {
   const [isMenuClicked, setIsMenuClicked] = React.useState(false);
-  const menuText = 'text-sm bg-transparent hover:bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900 active:bg-black px-4 py-2 rounded-md transition-all';
+  const menuText = 'text-sm hover:bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900 active:bg-black px-4 py-2 rounded-md transition duration-500 hover:duration-100';
   const textMobile = 'text-3xl transition-colors hover:bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900 active:bg-black p-2 rounded-md';
   const [prevScrollPos, setPrevScrollPos] = React.useState(window.pageYOffset);
   const [navbarTop, setNavbarTop] = React.useState("0");
@@ -33,14 +33,14 @@ function Navbar() {
   },[])
 
   return (
-    <nav className={`w-full h-20 sticky z-50 top-${navbarTop} m-0 p-0 bg-black bg-zinc-800 flex md:justify-center items-center transition-all`}>
+    <nav className={`w-full h-20 sticky z-50 top-${navbarTop} m-0 p-0 bg-black bg-zinc-800 flex md:justify-center items-center`}>
         <div className='container hidden md:block'>
             <ul className='px-20 lg:px-52 w-full flex justify-between'>
-                <li><a className={menuText} href="#">Home</a></li>
-                <li><a className={menuText} href="#about">Who Am I</a></li>
-                <li><a className={menuText} href="#experience">Work Experience</a></li>
-                <li><a className={menuText} href="#projects">Projects</a></li>
-                <li><a className={menuText} href="#contact">Contact Me</a></li>
+                <li className='group'><a className={menuText} href="#">Home</a></li>
+                <li className='group'><a className={menuText} href="#about">Who Am I</a></li>
+                <li className='group'><a className={menuText} href="#experience">Work Experience</a></li>
+                <li className='group'><a className={menuText} href="#projects">Projects</a></li>
+                <li className='group'><a className={menuText} href="#contact">Contact Me</a></li>
             </ul>
         </div>
         <div className='container flex justify-end md:hidden mr-6'>
