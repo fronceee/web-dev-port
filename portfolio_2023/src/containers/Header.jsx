@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import { variants , item } from "../staggerAntimation"
-
+import { variants , item } from "../staggerAntimation";
 function Header() {
   return (
     <motion.div 
@@ -20,7 +19,8 @@ function Header() {
               <h1>Tharathip</h1>
             </div>
             <motion.div variants={item} className='text-2xl md:text-4xl'>
-              <h2>I'm a <span className='block font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>Front-End Developer</span></h2>
+              <h2>I'm a 
+                <span className='block font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>Front-End Developer</span></h2>
             </motion.div>
           </div>
         </motion.div>

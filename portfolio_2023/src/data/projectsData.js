@@ -23,7 +23,7 @@ const projectsData = [
     },
     {
         name: "Password Generator",
-        desc: "An app that generates random passwords based on a few user inputs, e.g. length, types of characters, etc.",
+        desc: "An app that generates random passwords based on a few user inputs.",
         linktoProj: "https://scrimba.com/scrim/coe5e462aa6a3ceddcf828158",
         img: "../src/assets/pw_gen.png",
         skills: [

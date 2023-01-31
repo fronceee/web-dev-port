@@ -9,7 +9,7 @@ module.exports = {
     require('tailwind-scrollbar'),
   ],
   variants: {
-    scrollbar: ['rounded']
+    scrollbar: ['rounded'],
   },
   daisyui: {
     themes: [

@@ -33,10 +33,9 @@ const About = () => {
           </div>
         </div>
         <div className='group w-full md:w-[30%] flex justify-center'>
-          <img className='w-full md:hidden' src='../src/assets/profile_pic_mobile.png' />
-          <div className='relative'>
-            <img className='hidden relative z-10 md:block' src='../src/assets/propic2.png' />
-            <div class="absolute -inset-1 bg-gradient-to-br from-orange-500 via-pink-500 to-purple-90 opacity-50 rounded-[50px] blur group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+          <div className='relative w-4/6 md:w-auto'>
+            <img className='relative z-10' src='../src/assets/propic2.png' />
+            <div className="absolute -inset-1 bg-gradient-to-br from-orange-500 via-pink-500 to-purple-90 opacity-50 rounded-[50px] blur group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
           </div>
         </div>
       </div>

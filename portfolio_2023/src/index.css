@@ -25,11 +25,11 @@ body, html {
   -webkit-text-size-adjust: 100%;
 }
 
-
-.navbar {
-  z-index: 99;
-}
-
-main {
-  z-index: 0;
+@layer components {
+  .tab-bordered {
+    @apply md:border-0 md:border-r-2 ;
+  }
+  .tab {
+    @apply md:m-0;
+  }
 }

@@ -7,8 +7,8 @@ function Card(props) {
         <motion.div 
             initial={item.hidden}
             whileInView={item.show}
-            key={props.id} className='h-full'>
-            <div className="card w-[320px] bg-base-300 shadow mb-10">
+            key={props.id} className='h-full w-72'>
+            <div className="card bg-base-300 mb-10">
                 <figure className='w-full h-60 object-cover'><img className='w-full object-cover' src={img} alt="website project" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
