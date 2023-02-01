@@ -32,4 +32,8 @@ body, html {
   .tab {
     @apply md:m-0;
   }
+
+  .tab-active {
+    @apply md:border-r;
+  }
 }

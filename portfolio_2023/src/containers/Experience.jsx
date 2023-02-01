@@ -51,14 +51,15 @@ function Experience() {
       </h1>
       <div className='w-full flex flex-col md:flex-row md:max-w-screen-md md:h-96 md:mt-20'>
         <div className='w-full h-16 md:h-fit md:w-fit flex scrollbar-thin scrollbar-thumb-white scrollbar-thumb-rounded-full overflow-y-scroll md:overflow-hidden snap-x pb-4 mb-4'>
-          <ul className='tabs flex flex-col md:flex-row md:h-full md:justify-end md:w-[34em] md:gap-y-6 md:mr-4'>
+          <ul className='tabs flex flex-col md:flex-row md:h-full md:justify-end md:w-[34em] md:mr-4'>
             {jobPlaces.map((item,index) => (
             // set back to inline-block due to the tab's 'inline-flex' display
               <li key={id()} onClick={() => setCurrentIndex(index)} 
-              className={`transition-all tab tab-bordered ${isIndexMatch(index, currentIndex) && `tab-active text-white`} inline-block snap-start ${checkCUD(item.place) ? `text-xs leading-3 whitespace-pre-wrap`: `text-base`}`} >
+              className={`tab tab-bordered ${isIndexMatch(index, currentIndex) && `tab-active text-white`} inline-block snap-start ${checkCUD(item.place) ? `text-xs leading-3 whitespace-pre-wrap`: `text-base`} md:h-12 md:flex`} >
                 <a key={id()}>{item.place}</a></li>
             ))}
           </ul>
+          {/* <div className='border relative right-[1.06em]'></div> */}
         </div>
         <div className='grow'>
           {renderSelectedJob(currentIndex)}
