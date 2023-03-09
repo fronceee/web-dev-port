@@ -3,7 +3,7 @@ const projectsData = [
         name: "Quizzical",
         desc: "A quiz game that test your knowledge with 5 questions from Opentdb API.",
         linktoProj: "https://codesandbox.io/s/quiz-jy3ouh",
-        img: "../src/assets/quzzical.png",
+        img: "./assets/quzzical.png",
         skills: [
             "Fetching API",
             "React"
@@ -13,7 +13,7 @@ const projectsData = [
         name: "Pic Some",
         desc: "A  Mock-Up Photo Stock website.",
         linktoProj: "https://codesandbox.io/s/picsome-xddo8t",
-        img: "../src/assets/picsome.png",
+        img: "./assets/picsome.png",
         skills: [
             "Fetching API",
             "React",
@@ -25,7 +25,7 @@ const projectsData = [
         name: "Password Generator",
         desc: "An app that generates random passwords based on a few user inputs.",
         linktoProj: "https://scrimba.com/scrim/coe5e462aa6a3ceddcf828158",
-        img: "../src/assets/pw_gen.png",
+        img: "./assets/pw_gen.png",
         skills: [
             "HTML",
             "CSS",

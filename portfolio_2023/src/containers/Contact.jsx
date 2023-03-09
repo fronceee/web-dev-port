@@ -23,7 +23,7 @@ function Contact() {
             </svg>
           </a>
 
-          <a href='https://github.com/fronceee' target='_blank'><img className='flex items-center justify-center w-full h-full' src='../src/assets/github-mark-white.svg' /></a>
+          <a href='https://github.com/fronceee' target='_blank'><img className='flex items-center justify-center w-full h-full' src='./assets/github-mark-white.svg' /></a>
         </div>
       </div>
     </div>

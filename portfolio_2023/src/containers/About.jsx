@@ -34,7 +34,7 @@ const About = () => {
         </div>
         <div className='group w-full md:w-[31%] flex justify-center'>
           <div className='relative w-4/6 md:w-content'>
-            <img className='relative z-10' src='../src/assets/propic2.png' />
+            <img className='relative z-10' src='./assets/propic2.png' />
             <div className="absolute -inset-1 bg-gradient-to-br from-orange-500 via-pink-500 to-purple-90 opacity-50 rounded-[50px] blur group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
           </div>
         </div>
