@@ -4,7 +4,7 @@ const iconSize = "w-12 h-12"
 function Contact() {
   return (
     <div id="contact" className='min-h-fit mx-6 max-w-sm sm:max-w-full sm:h-[34em] scroll-mt-20'>
-      <h1 className={`text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900`}>Contact Me</h1>
+      <h1 className={`text-5xl 2xl:pl-16 font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900`}>Contact Me</h1>
       <div className='h-[50%] flex flex-col justify-center items-center my-20'>
         <div className='mb-4 text-lg'>
           <p>My inbox is always open as I look for new opportunities.</p>

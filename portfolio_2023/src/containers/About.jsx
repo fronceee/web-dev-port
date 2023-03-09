@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div id='about' className='flex flex-col mx-6 mb-20 scroll-mt-20'>
-      <h1 className='text-5xl mb-3 md:mb-8 font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>Who Am I?</h1>
+      <h1 className='text-5xl 2xl:pl-16 mb-3 md:mb-8 font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>Who Am I?</h1>
       <div className='font-light text-sm md:text-base flex flex-col items-center flex justify-center md:flex-row md:gap-14'>
         <div className='md:w-[49%] flex flex-col gap-4 items-center'>
           <p className='mb-4 md:m-0'>Hi! My name is Tharathip Tamwiset. 
@@ -32,8 +32,8 @@ const About = () => {
             </ul>
           </div>
         </div>
-        <div className='group w-full md:w-[30%] flex justify-center'>
-          <div className='relative w-4/6 md:w-auto'>
+        <div className='group w-full md:w-[31%] flex justify-center'>
+          <div className='relative w-4/6 md:w-content'>
             <img className='relative z-10' src='../src/assets/propic2.png' />
             <div className="absolute -inset-1 bg-gradient-to-br from-orange-500 via-pink-500 to-purple-90 opacity-50 rounded-[50px] blur group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
           </div>

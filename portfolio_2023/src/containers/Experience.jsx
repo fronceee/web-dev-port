@@ -29,7 +29,8 @@ function Experience() {
         initial="hidden"
         animate="show"
         exit="hidden"
-        key={id()}>
+        key={id()}
+        className='md:w-full'>
           {/* add key to let motion.div to track */}
         <motion.div variants={motionItem}>
           <h1 className='font-semibold text-2xl leading-8 whitespace-pre-wrap'>{data.title}</h1>
@@ -45,11 +46,11 @@ function Experience() {
       )
   }
   return (
-    <div id='experience' className='mx-6 scroll-mt-20 mb-20 max-h-fit flex flex-col justify-center items-center'>
-      <h1 className='self-start text-5xl mb-6 font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>
+    <div id='experience' className='mx-6 h-screen md:h-auto scroll-mt-20 pb-14 max-h-fit flex flex-col justify-center items-center'>
+      <h1 className='self-start 2xl:pl-16 text-5xl mb-10 font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-500 to-purple-900'>
         Work Experience
       </h1>
-      <div className='w-full flex flex-col md:flex-row md:max-w-screen-md md:h-96 md:mt-20'>
+      <div className='w-full flex flex-col md:flex-row md:max-w-screen-md md:h-96 md:mt-24'>
         <div className='w-full h-16 md:h-fit md:w-fit flex scrollbar-thin scrollbar-thumb-white scrollbar-thumb-rounded-full overflow-y-scroll md:overflow-hidden snap-x pb-4 mb-4'>
           <ul className='tabs flex flex-col md:flex-row md:h-full md:justify-end md:w-[34em] md:mr-4'>
             {jobPlaces.map((item,index) => (
@@ -61,7 +62,7 @@ function Experience() {
           </ul>
           {/* <div className='border relative right-[1.06em]'></div> */}
         </div>
-        <div className='grow'>
+        <div className='w-full'>
           {renderSelectedJob(currentIndex)}
         </div>
       </div>

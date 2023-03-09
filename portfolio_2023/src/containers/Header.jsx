@@ -1,6 +1,13 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { variants , item } from "../staggerAntimation";
+import { v4 as id } from 'uuid';
+
+variants.show.transition = {
+  ...variants.show.transition, 
+  ease: "circIn"
+}
+
 function Header() {
   return (
     <motion.div 
