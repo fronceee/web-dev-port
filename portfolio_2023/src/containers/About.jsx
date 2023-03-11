@@ -13,7 +13,7 @@ const About = () => {
           </p>
           <p className='mb-4 md:m-0'>
             Fast forward to the present. 
-            I completed the Scrimba Front-End Career Path, which provided me with a solid foundation for Front-End Development. 
+            I completed <a className='link link-hover font-medium' href='https://scrimba.com/certificate/uvP3G5SP/gfrontend' target='_blank'>the Scrimba Front-End Career Path</a>, which provided me with a solid foundation for Front-End Development. 
             Now I'm at Skooldio, where I'm sharing my programming skills
             and helping others up-skill and re-skill, 
             and I'm looking for a job as a Front-End Developer.
