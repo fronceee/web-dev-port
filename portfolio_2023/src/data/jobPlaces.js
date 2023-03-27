@@ -4,9 +4,9 @@ const jobPlaces = [
       title: `Course Development Associate\n(Tech / Coding)`,
       time: 'July 2022 - Present',
       desc: [
-        'Assist and coordinate with instructors to develop tech/coding courses on the platform',
-        'Assist the team to deliver quality tech online courses on the platform',
-        'Research and develop tech course markets for current courses and possible offline and online courses']
+        'Assist the team to deliver quality tech/coding online courses on the platform',
+        'Research and develop tech course markets for current courses and possible offline and online courses',
+        "Answer learners’ questions about content in tech courses via platform's discuss boards and other channels and coordinate more technical questions to instructors.",]
       },
     { 
       place: 'Samsenwittayalai School',
@@ -27,12 +27,13 @@ const jobPlaces = [
           'Teaching and Deliver both subjects in online format']
         },
       { 
-        place: 'Algorithmics Thailand',
+        place: 'Algorithmics BangkokMetro',
         title: 'Part-Time Python Teacher',
         time: 'Dec 2020 - Present',
         desc: [
           'Teaching Python for kids aged 12 - 15 who had no pior coding background to be able to create simple coding projects',
-          'Adapt pre-planed lesson planing to suitable for learners each class ',
+          'Teach Python from basic syntax to complex concepts in programing such as OOP, Dictionary.',
+          'dapt pre-planned lessons to suitable for learners in each class.',
         ]
         }
   ]
