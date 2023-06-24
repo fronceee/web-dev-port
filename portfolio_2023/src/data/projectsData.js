@@ -1,5 +1,16 @@
 const projectsData = [
     {
+        name: "Happy Kids",
+        desc: "An e-commerce website  presented in the SkillKamp Project as a Front-End Dev.",
+        linktoProj: "https://master--rad-pastelito-478578.netlify.app/",
+        img: "./assets/happykids.png",
+        skills: [
+            "React",
+            "React Router",
+            "Context API"
+        ]
+    },
+    {
         name: "Quizzical",
         desc: "A quiz game that test your knowledge with 5 questions from Opentdb API.",
         linktoProj: "https://codesandbox.io/s/quiz-jy3ouh",
@@ -19,17 +30,6 @@ const projectsData = [
             "React",
             "React Custom Hook",
             "React Router",
-        ]
-    },
-    {
-        name: "Password Generator",
-        desc: "An app that generates random passwords based on a few user inputs.",
-        linktoProj: "https://scrimba.com/scrim/coe5e462aa6a3ceddcf828158",
-        img: "./assets/pw_gen.png",
-        skills: [
-            "HTML",
-            "CSS",
-            "Vanilla Javascript",
         ]
     }
 ]

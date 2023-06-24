@@ -20,7 +20,7 @@ const jobPlaces = [
     ]
   },
   { 
-    place: 'Chulalongkorn University Demonstration Secondary School',
+    place: 'Chulalongkorn University Demonstration\nSecondary School',
     title: 'Student Teacher',
     time: 'May 2022 - Oct 2022',
     desc: [
