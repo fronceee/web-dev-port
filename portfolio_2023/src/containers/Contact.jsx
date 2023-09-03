@@ -17,7 +17,7 @@ function Contact() {
           <p>My inbox is always open as I look for new opportunities.</p>
           <p>I'll get back to you as soon as I can!</p>
         </div>
-        <div className="h-10 flex items-center justify-center gap-2 md:gap-10">
+        <div className="h-10 flex items-center justify-center gap-4 md:gap-10 mb-8">
           <a
             href="mailto:tharathip.tamwiset@gmail.com"
             target="_blank"
@@ -61,7 +61,7 @@ function Contact() {
 
           <a
             href="https://github.com/fronceee"
-            className="w-1/4 h-full -ml-7 md:ml-0"
+            className="w-1/4 h-full md:ml-0"
             target="_blank"
           >
             <img
@@ -70,6 +70,12 @@ function Contact() {
             />
           </a>
         </div>
+        <a
+          className="btn btn-outline text-white hover:bg-white hover:text-black"
+          href="./assets/tharathip_tamwiset_resume.pdf"
+        >
+          Resume
+        </a>
       </div>
     </div>
   );
