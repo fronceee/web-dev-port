@@ -4,9 +4,9 @@ const jobPlaces = [
     title: 'Junior Frontend Developer',
     time: 'Nov 2023 - Present',
     desc: [
-      'Assist the team to deliver quality tech/coding online courses on the platform',
-      'Research and developing tech course markets for current courses and possible offline and online courses',
-      "Answer learners' questions about content in tech courses via the platform's discussion boards and other channels and coordinating more technical questions to instructors.",
+      'Develop user interfaces according to design specifications using Vue.js',
+      'Collaborate with design teams to understand project requirements and translate them into interactive and visually appealing user interfaces',
+      "Maintain a strong attention to detail, ensuring the accuracy of the UI components and their adherence to the specified design guidelines.",
     ]
   },
   { 
