@@ -24,10 +24,16 @@ const About = () => {
             >
               the Scrimba Front-End Career Path
             </a>
+            <span> and </span> 
+            <a
+              className="link link-hover font-medium"
+              href="https://www.coursera.org/account/accomplishments/specialization/certificate/7LN6NXH7U5A2"
+              target="_blank"
+            >
+              Meta Front-End Developer Specialization
+            </a>
             , which provided me with a solid foundation for Front-End
-            Development. Now I'm at Skooldio, where I'm sharing my programming
-            skills and helping others up-skill and re-skill, and I'm looking for
-            a job as a Front-End Developer.
+            Development. Now I'm at PEAK Account, where I develop UI using Vue.js.
           </p>
           <p className="mb-4 md:m-0">
             Here are a few technologies and programming languages with which
@@ -37,10 +43,11 @@ const About = () => {
             <ul className="list-disc">
               <li>HTML, CSS</li>
               <li>Python</li>
+              <li>JavaScript (ES6+)</li>
             </ul>
             <ul className="list-disc">
-              <li>JavaScript (ES6+)</li>
-              <li>ReactJs</li>
+              <li>React.Js</li>
+              <li>Vue.Js</li>
             </ul>
           </div>
         </div>

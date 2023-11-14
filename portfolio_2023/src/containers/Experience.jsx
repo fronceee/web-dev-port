@@ -56,8 +56,8 @@ function Experience() {
             {jobPlaces.map((item,index) => (
             // set back to inline-block due to the tab's 'inline-flex' display
               <li key={id()} onClick={() => setCurrentIndex(index)} 
-              className={`tab tab-bordered ${isIndexMatch(index, currentIndex) && `tab-active text-white`} inline-block snap-start ${checkCUD(item.place) ? `text-xs leading-3 whitespace-pre-wrap`: `text-base`} md:h-12 md:flex`} >
-                <a key={id()}>{item.place}</a></li>
+              className={`tab tab-bordered md:w-full ${isIndexMatch(index, currentIndex) ? `tab-active text-white` : ""} inline-block snap-start ${checkCUD(item.place) ? `text-xs leading-3 whitespace-pre-wrap`: `text-base`} md:h-12 md:flex`} >
+                <a className='ml-auto' key={id()}>{item.place}</a></li>
             ))}
           </ul>
           {/* <div className='border relative right-[1.06em]'></div> */}

@@ -1,8 +1,8 @@
 const jobPlaces = [
   { 
-    place: 'Skooldio',
-    title: 'Course Development Associate (Tech/Coding)',
-    time: 'July 2022 - Present',
+    place: 'PEAK Account',
+    title: 'Junior Frontend Developer',
+    time: 'Nov 2023 - Present',
     desc: [
       'Assist the team to deliver quality tech/coding online courses on the platform',
       'Research and developing tech course markets for current courses and possible offline and online courses',
@@ -10,15 +10,16 @@ const jobPlaces = [
     ]
   },
   { 
-    place: 'Samsenwittayalai School',
-    title: 'Student Teacher',
-    time: 'Oct 2022 - March 2023',
+    place: 'Skooldio',
+    title: 'Course Development Associate (Tech/Coding)',
+    time: 'July 2022 - October 2023',
     desc: [
-      'Responsible for teaching, lesson planning, and creating learning material for M2 English Foundation classes',
-      'Responsible for teaching, lesson planning, and creating learning material for M6 Video Editing classes',
-      'Teaching and delivering both subjects in online and hybrid formats.'
+      'Assist the team to deliver quality tech/coding online courses on the platform',
+      'Research and developing tech course markets for current courses and possible offline and online courses',
+      "Answer learners' questions about content in tech courses via the platform's discussion boards and other channels and coordinating more technical questions to instructors.",
     ]
   },
+
   { 
     place: 'Chulalongkorn University Demonstration\nSecondary School',
     title: 'Student Teacher',
