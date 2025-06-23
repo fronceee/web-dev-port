@@ -3,7 +3,6 @@
   "private": true,
   "version": "1.0.1",
   "type": "module",
-  "homepage": "https://fronceee.github.io/web-dev-port/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
